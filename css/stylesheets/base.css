@@ -73,12 +73,13 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
 /* line 5, ../sass/_header.sass */
 .hero {
   background-color: #21abc7;
-  padding: 20px 0;
+  padding: 30px 0;
   color: #fff;
   text-align: center;
+  margin-bottom: 40px;
 }
 
-/* line 11, ../sass/_header.sass */
+/* line 12, ../sass/_header.sass */
 .logo {
   font-size: 34px;
   text-transform: uppercase;
@@ -90,12 +91,9 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
 /* --------------------------------- */
 /* line 5, ../sass/_list.sass */
 .news-item {
-  background-color: #222;
-}
-
-/* line 8, ../sass/_list.sass */
-.news-link {
-  background-color: #222;
+  border-bottom: 1px solid #b6b6b6;
+  margin-bottom: 20px;
+  padding-bottom: 20px;
 }
 
 /* --------------------------------- */
@@ -104,4 +102,10 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
 /* line 17, ../sass/base.sass */
 body {
   font-family: sans-serif;
+}
+
+/* line 21, ../sass/base.sass */
+.container {
+  max-width: 800px;
+  margin: 0 auto;
 }
