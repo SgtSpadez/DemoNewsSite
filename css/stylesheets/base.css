@@ -85,7 +85,23 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
   font-weight: bold;
 }
 
-/* line 12, ../sass/base.sass */
+/* --------------------------------- */
+/*            List Styles            */
+/* --------------------------------- */
+/* line 5, ../sass/_list.sass */
+.news-item {
+  background-color: #222;
+}
+
+/* line 8, ../sass/_list.sass */
+.news-link {
+  background-color: #222;
+}
+
+/* --------------------------------- */
+/*                Base               */
+/* --------------------------------- */
+/* line 17, ../sass/base.sass */
 body {
   font-family: sans-serif;
 }
