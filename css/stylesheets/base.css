@@ -2,6 +2,7 @@
  * In this file you should write your main styles. (or centralize your imports)
  * Import this file using the following HTML or equivalent:
  * <link href="/stylesheets/screen.css" media="screen, projection" rel="stylesheet" type="text/css" /> */
+@import url("https://fonts.googleapis.com/css?family=Lato|Montserrat");
 /* line 5, C:/Ruby22/lib/ruby/gems/2.2.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
 html, body, div, span, applet, object, iframe,
 h1, h2, h3, h4, h5, h6, p, blockquote, pre,
@@ -77,9 +78,10 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
   color: #fff;
   text-align: center;
   margin-bottom: 40px;
+  font: Montserrat, sans-serif;
 }
 
-/* line 13, ../sass/_header.sass */
+/* line 14, ../sass/_header.sass */
 .logo {
   font-size: 34px;
   text-transform: uppercase;
@@ -126,29 +128,31 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
 /* --------------------------------- */
 /*                Base               */
 /* --------------------------------- */
-/* line 18, ../sass/base.sass */
+/* line 19, ../sass/base.sass */
 body {
-  font-family: sans-serif;
+  font-family: "Lato", sans-serif;
+  line-height: 1.5;
+  font-size: 16px;
 }
 
-/* line 21, ../sass/base.sass */
+/* line 24, ../sass/base.sass */
 a {
   color: #d93842;
 }
-/* line 23, ../sass/base.sass */
+/* line 26, ../sass/base.sass */
 a:hover {
   color: #e98e93;
 }
-/* line 25, ../sass/base.sass */
+/* line 28, ../sass/base.sass */
 a:active {
   color: #901b23;
 }
-/* line 27, ../sass/base.sass */
+/* line 30, ../sass/base.sass */
 a:focus {
   color: #f2b8bc;
 }
 
-/* line 31, ../sass/base.sass */
+/* line 34, ../sass/base.sass */
 .container {
   max-width: 800px;
   margin: 0 auto;
