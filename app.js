@@ -9,8 +9,8 @@ $(document).ready(function() {
   });
 
   $('.js-add-link').on('click', function(event) {
-    
+    event.preventDefault();
 
-
+    $('.js-form').toggleClass('is-visible');
   });
 });
