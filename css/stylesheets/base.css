@@ -193,17 +193,27 @@ form.is-visible {
   left: 50%;
   top: 40px;
   position: absolute;
-  transform: translate(-50%, 0);
+  transform: translate(-50%, -10%);
   width: 400px;
   z-index: 2;
+  opacity: 0;
+  visibility: hidden;
 }
 
-/* line 15, ../sass/_modal.sass */
+/* line 18, ../sass/_modal.sass */
+.modal.is-visible {
+  opacity: 1;
+  visibility: visible;
+  transform: translate(-50%, 0);
+  transition: 0.3s ease-in-out;
+}
+
+/* line 24, ../sass/_modal.sass */
 .modal-media {
   position: relative;
 }
 
-/* line 18, ../sass/_modal.sass */
+/* line 27, ../sass/_modal.sass */
 .modal-media-title {
   color: #fff;
   font-size: 24px;
@@ -212,12 +222,12 @@ form.is-visible {
   position: absolute;
 }
 
-/* line 25, ../sass/_modal.sass */
+/* line 34, ../sass/_modal.sass */
 .modal-content {
   padding: 20px;
 }
 
-/* line 28, ../sass/_modal.sass */
+/* line 37, ../sass/_modal.sass */
 .modal-overlay {
   background-color: #212121;
   position: fixed;
@@ -227,8 +237,17 @@ form.is-visible {
   top: 0;
   height: 100%;
   width: 100%;
-  opacity: 0.3;
+  opacity: 0.4;
   z-index: 1;
+  opacity: 0;
+  visibility: hidden;
+  transition: 0.3s ease-in-out;
+}
+
+/* line 52, ../sass/_modal.sass */
+.modal-overlay.is-visible {
+  opacity: 0.4;
+  visibility: visible;
 }
 
 /* --------------------------------- */
