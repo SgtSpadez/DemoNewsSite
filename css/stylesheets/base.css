@@ -125,6 +125,21 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
   font-size: 14px;
 }
 
+/* States */
+/* line 30, ../sass/_list.sass */
+.is-liked {
+  animation: flash 2s;
+}
+
+/* Animation */
+@keyframes flash {
+  from, 50%, to {
+    opacity: 0;
+  }
+  25%, 75% {
+    opacity: 1;
+  }
+}
 /* --------------------------------- */
 /*                Base               */
 /* --------------------------------- */
