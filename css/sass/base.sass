@@ -20,6 +20,13 @@ body
 
 a
   color: $color-red
+  &:hover
+    color: lighten($color-red, 20%)
+  &:active
+    color: darken($color-red, 20%)
+  &:focus
+    color: lighten($color-red, 30%)
+
 
 .container
   max-width: 800px
