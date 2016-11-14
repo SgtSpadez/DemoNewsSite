@@ -96,6 +96,12 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
   padding-bottom: 20px;
 }
 
+/* line 10, ../sass/_list.sass */
+.news-link {
+  color: #21abc7;
+  font-size: 22px;
+}
+
 /* --------------------------------- */
 /*                Base               */
 /* --------------------------------- */
