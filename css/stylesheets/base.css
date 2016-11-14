@@ -2,7 +2,7 @@
  * In this file you should write your main styles. (or centralize your imports)
  * Import this file using the following HTML or equivalent:
  * <link href="/stylesheets/screen.css" media="screen, projection" rel="stylesheet" type="text/css" /> */
-@import url("https://fonts.googleapis.com/css?family=Lato|Montserrat");
+@import url("https://fonts.googleapis.com/css?family=Lato:400,700|Montserrat:400,700");
 /* line 5, C:/Ruby22/lib/ruby/gems/2.2.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
 html, body, div, span, applet, object, iframe,
 h1, h2, h3, h4, h5, h6, p, blockquote, pre,
@@ -131,6 +131,12 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
   animation: flash 2s;
 }
 
+/* line 33, ../sass/_list.sass */
+.is-visible {
+  opacity: 1;
+  visibility: visible;
+}
+
 /* Animation */
 @keyframes flash {
   from, 50%, to {
@@ -141,33 +147,64 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
   }
 }
 /* --------------------------------- */
+/*               Form                */
+/* --------------------------------- */
+/* line 5, ../sass/_form.sass */
+.form {
+  margin-bottom: 20px;
+}
+
+/* line 8, ../sass/_form.sass */
+.form-label {
+  display: block;
+  font-weight: bold;
+  margin-bottom: 5px;
+}
+
+/* line 13, ../sass/_form.sass */
+.form-input {
+  border: 1px solid #b6b6b6;
+  border-radius: 4px;
+  box-sizing: border-box;
+  font-size: 20px;
+  padding: 10px;
+  width: 100%;
+}
+
+/* --------------------------------- */
 /*                Base               */
 /* --------------------------------- */
-/* line 19, ../sass/base.sass */
+/* line 20, ../sass/base.sass */
 body {
   font-family: "Lato", sans-serif;
   line-height: 1.5;
   font-size: 16px;
 }
 
-/* line 24, ../sass/base.sass */
+/* line 25, ../sass/base.sass */
 a {
   color: #d93842;
 }
-/* line 26, ../sass/base.sass */
+/* line 27, ../sass/base.sass */
 a:hover {
   color: #e98e93;
 }
-/* line 28, ../sass/base.sass */
+/* line 29, ../sass/base.sass */
 a:active {
   color: #901b23;
 }
-/* line 30, ../sass/base.sass */
+/* line 31, ../sass/base.sass */
 a:focus {
   color: #f2b8bc;
 }
 
 /* line 34, ../sass/base.sass */
+h1 {
+  font-size: 32px;
+  line-height: 2.5;
+}
+
+/* line 38, ../sass/base.sass */
 .container {
   max-width: 800px;
   margin: 0 auto;

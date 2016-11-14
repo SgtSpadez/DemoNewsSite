@@ -7,4 +7,10 @@ $(document).ready(function() {
     .closest('.news-item')
     .addClass('is-liked');
   });
+
+  $('.js-add-link').on('click', function(event) {
+    
+
+
+  });
 });
